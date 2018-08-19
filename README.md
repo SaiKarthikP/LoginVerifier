@@ -1,6 +1,6 @@
 Windows Login Verifier using Face recognition module and OpenCV
 
-Descrition
+Description
 ----
 This python script verifies if the user is indeed the person in 'IDs/p1.jpg' within seconds via face recognition using the attached webcam. If not, the user will be locked out of the system. A 3 second video of the intruder will also be saved in the 'intruders' directory.
 
@@ -18,9 +18,13 @@ How to setup script on Task Scheduler to start on system login in Windows 10
 3. Click on 'Create Task...' on right panel and enter a Name for the task. 
 4. In the Triggers tab, click 'New...', choose 'On workstation unlock' and click 'OK;.
 5. In the Actions tab, click 'New...', choose 'Start a program' and do the following: 
+	
 	a. Program/script: insert path to python.exe
+	
 	b. Add argument: LoginVerifier.py
+	
 	c. Start in: insert path to directory where script is saved
+	
 	d. Click 'OK'
 
 Required Libraries
