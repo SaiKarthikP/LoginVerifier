@@ -36,7 +36,7 @@ while time.time() < timeout:
     if instantiateWriter:
         # define codec and create videowriter object
         fourcc = cv2.VideoWriter_fourcc('M', 'J', 'P', 'G')
-        out = cv2.VideoWriter('intruders/output_' + str(time.time()) + '.avi', fourcc, 30.0,
+        out = cv2.VideoWriter('capturedIntruders/output_' + str(time.time()) + '.avi', fourcc, 30.0,
                               (int(video_capture.get(3)), int(video_capture.get(4))))
         videoWriterCreated = True
         instantiateWriter = False
