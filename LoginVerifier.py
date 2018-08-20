@@ -99,7 +99,7 @@ while time.time() < timeout:
 video_capture.release()
 cv2.destroyAllWindows()
 if isp1:
-    ctypes.windll.user32.MessageBoxW(0, "Hi " + p1name + ". Sorry to bother you.", "Face Recognition Verifier", 1)
+    # ctypes.windll.user32.MessageBoxW(0, "Hi " + p1name + ". Sorry to bother you.", "Face Recognition Verifier", 1)
     pass
 
 else:
